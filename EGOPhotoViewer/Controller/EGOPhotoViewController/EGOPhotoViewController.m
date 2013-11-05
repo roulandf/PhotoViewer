@@ -1014,7 +1014,7 @@
 	actionSheet.actionSheetStyle = UIActionSheetStyleBlackTranslucent;
 	actionSheet.delegate = self;
 	
-	[actionSheet showInView:self.view];
+	[actionSheet showFromToolbar:self.navigationController.toolbar];
 	[self setBarsHidden:YES animated:YES];
 	
 	[actionSheet release];
